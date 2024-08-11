@@ -34,13 +34,15 @@ body {
     margin-bottom: 20px;
 }
 .carousel-container {
-    width: 95%;
-    overflow: hidden;
+    width: 100%; /* Garante que o carrossel ocupe 100% da largura da tela */
+    max-width: 600px; /* Define uma largura máxima para o carrossel */
+    margin: 0 auto; /* Centraliza o carrossel na página */
     position: relative;
-    max-width: 800px;
 }
-.carousel {
-    display: flex;
+.carousel video {
+    width: 100%; /* O vídeo ocupará 100% da largura do carrossel */
+    height: auto; /* Mantém a proporção do vídeo */
+    max-width: 100%;
     
 }
 .photo-item {
@@ -70,10 +72,10 @@ body {
     cursor: pointer;
 }
 .nav-button.prev {
-    left: 10px;
+    left: 0;
 }
 .nav-button.next {
-    right: 10px;
+    right: 0;
 }
 .footer {
     
